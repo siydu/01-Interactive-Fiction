@@ -1,7 +1,7 @@
 {
   "passages": [
     {
-      "text": "''Old Man''\n\"Hello young man, you must be the one to kill the dragon!\"(set: $sword to \"0\")\n[[Next]]",
+      "text": "''Old Man''\n\"Hello young man, you must be the one to kill the dragon!\"\n[[Next]]",
       "links": [
         {
           "name": "Next",
@@ -34,7 +34,7 @@
       "pid": "2",
       "position": {
         "x": "403",
-        "y": "321"
+        "y": "320"
       }
     },
     {
@@ -50,7 +50,7 @@
       "pid": "3",
       "position": {
         "x": "328",
-        "y": "471"
+        "y": "470"
       }
     },
     {
@@ -66,7 +66,7 @@
       "pid": "4",
       "position": {
         "x": "478",
-        "y": "471"
+        "y": "470"
       }
     },
     {
@@ -82,46 +82,31 @@
       "pid": "5",
       "position": {
         "x": "406",
-        "y": "615"
+        "y": "617"
       }
     },
     {
-      "text": "You are in a small village.\n[[Go west->Dark road]]\n[[Go South->Hill]]\n[[Go east->Black Smith]]",
+      "text": "You are in a small village.\n[[Go west->Dark road]]",
       "links": [
         {
           "name": "Go west",
           "link": "Dark road",
           "pid": "7"
-        },
-        {
-          "name": "Go South",
-          "link": "Hill",
-          "pid": "8"
-        },
-        {
-          "name": "Go east",
-          "link": "Black Smith",
-          "pid": "9"
         }
       ],
       "name": "Go to the village",
       "pid": "6",
       "position": {
-        "x": "406",
-        "y": "765"
+        "x": "405",
+        "y": "768"
       }
     },
     {
-      "text": "You are on a dark road.\n[[Go west->Dragon Nest]]\n[[Go South->Hill]]\n[[Go east->Go to the village]]",
+      "text": "You are on a dark road.\n[[Go west->Dragon Nest]]\n[[Go east->Go to the village]]",
       "links": [
         {
           "name": "Go west",
           "link": "Dragon Nest",
-          "pid": "10"
-        },
-        {
-          "name": "Go South",
-          "link": "Hill",
           "pid": "8"
         },
         {
@@ -133,60 +118,8 @@
       "name": "Dark road",
       "pid": "7",
       "position": {
-        "x": "255",
-        "y": "769"
-      }
-    },
-    {
-      "text": "You are in a hill with fresh air. \n[[Go North->Go to the village]] \n[[Go west->Dark road]] \n[[Go east->Black Smith]] ",
-      "links": [
-        {
-          "name": "Go North",
-          "link": "Go to the village",
-          "pid": "6"
-        },
-        {
-          "name": "Go west",
-          "link": "Dark road",
-          "pid": "7"
-        },
-        {
-          "name": "Go east",
-          "link": "Black Smith",
-          "pid": "9"
-        }
-      ],
-      "name": "Hill",
-      "pid": "8",
-      "position": {
-        "x": "406",
-        "y": "915"
-      }
-    },
-    {
-      "text": "You are in a Blacksmith's shop.\n[[Go east->Go to the village]] \n[[Go south->Hill]] \n[[Go meet ''the blacksmith'']]",
-      "links": [
-        {
-          "name": "Go east",
-          "link": "Go to the village",
-          "pid": "6"
-        },
-        {
-          "name": "Go south",
-          "link": "Hill",
-          "pid": "8"
-        },
-        {
-          "name": "Go meet ''the blacksmith''",
-          "link": "Go meet ''the blacksmith''",
-          "pid": "14"
-        }
-      ],
-      "name": "Black Smith",
-      "pid": "9",
-      "position": {
-        "x": "561",
-        "y": "770"
+        "x": "258",
+        "y": "766"
       }
     },
     {
@@ -200,235 +133,68 @@
         {
           "name": "Meet the dragon",
           "link": "Meet the dragon",
-          "pid": "11"
+          "pid": "9"
         }
       ],
       "name": "Dragon Nest",
-      "pid": "10",
+      "pid": "8",
       "position": {
-        "x": "108",
-        "y": "767"
+        "x": "261",
+        "y": "902"
       }
     },
     {
-      "text": "''Dark Dragon:''\n\"So, you are the one who suppose to kill me?\"\n[[Yes.]]\n[[I think you look beautiful.]]",
+      "text": "''Dark Dragon:''\n\"So, you are the one who suppose to kill me?\"\n[[Yes.]]\n[[You look beautiful.]]",
       "links": [
         {
           "name": "Yes.",
           "link": "Yes.",
-          "pid": "12"
+          "pid": "10"
         },
         {
-          "name": "I think you look beautiful.",
-          "link": "I think you look beautiful.",
-          "pid": "13"
-        }
-      ],
-      "name": "Meet the dragon",
-      "pid": "11",
-      "position": {
-        "x": "108",
-        "y": "917"
-      }
-    },
-    {
-      "text": "''Dark Dragon:''\n\"Do you have the sword?\"\n[[Yes I have.]]\n[[No I haven't]]",
-      "links": [
-        {
-          "name": "Yes I have.",
-          "link": "Yes I have.",
-          "pid": "18"
-        },
-        {
-          "name": "No I haven't",
-          "link": "No I haven't",
-          "pid": "19"
-        }
-      ],
-      "name": "Yes.",
-      "pid": "12",
-      "position": {
-        "x": "33",
-        "y": "1068"
-      }
-    },
-    {
-      "text": "''Dark Dragon:''\n\"Wha...What are you taking about!\"\n[[Yes you are.]]\n[[I'm here to defeat you!->Meet the dragon]]",
-      "links": [
-        {
-          "name": "Yes you are.",
-          "link": "Yes you are.",
-          "pid": "23"
-        },
-        {
-          "name": "I'm here to defeat you!",
-          "link": "Meet the dragon",
+          "name": "You look beautiful.",
+          "link": "You look beautiful.",
           "pid": "11"
         }
       ],
-      "name": "I think you look beautiful.",
-      "pid": "13",
+      "name": "Meet the dragon",
+      "pid": "9",
       "position": {
-        "x": "183",
-        "y": "1066"
+        "x": "407",
+        "y": "902"
       }
     },
     {
-      "text": "''The Blacksmith:''\n\"Good morning! How can I help you?\"\n[[Nothing]]\n[[Please give me the sword]]",
-      "links": [
-        {
-          "name": "Nothing",
-          "link": "Nothing",
-          "pid": "15"
-        },
-        {
-          "name": "Please give me the sword",
-          "link": "Please give me the sword",
-          "pid": "16"
-        }
-      ],
-      "name": "Go meet ''the blacksmith''",
-      "pid": "14",
-      "position": {
-        "x": "703",
-        "y": "771"
-      }
-    },
-    {
-      "text": "''The Blacksmith:''\n\"Have a great day!\"\n[[Back to the shop->Black Smith]] ",
-      "links": [
-        {
-          "name": "Back to the shop",
-          "link": "Black Smith",
-          "pid": "9"
-        }
-      ],
-      "name": "Nothing",
-      "pid": "15",
-      "position": {
-        "x": "628",
-        "y": "921"
-      }
-    },
-    {
-      "text": "''The Blacksmith:''\n(if:$sword is \"1\")\n[\"Sorry, I don't have any.\"\n[[Okay.->Nothing]]]\n(if:$sword is \"0\")\n[\"That will be a bag of gold.\"\n[[Here you are.]]\n[[No thanks.->Nothing]]]",
-      "links": [
-        {
-          "name": "Okay.",
-          "link": "Nothing",
-          "pid": "15"
-        },
-        {
-          "name": "Here you are.",
-          "link": "Here you are.",
-          "pid": "17"
-        },
-        {
-          "name": "No thanks.",
-          "link": "Nothing",
-          "pid": "15"
-        }
-      ],
-      "name": "Please give me the sword",
-      "pid": "16",
-      "position": {
-        "x": "779",
-        "y": "921"
-      }
-    },
-    {
-      "text": "''The BlackSmith:''\n\"Great! Here's your sword! Take care!\"(set: $sword to \"1\")\n[[Thank you!->Nothing]] ",
-      "links": [
-        {
-          "name": "Thank you!",
-          "link": "Nothing",
-          "pid": "15"
-        }
-      ],
-      "name": "Here you are.",
-      "pid": "17",
-      "position": {
-        "x": "779",
-        "y": "1071"
-      }
-    },
-    {
-      "text": "''Dark Dragon:''\n(if:$sword is \"1\")\n[\"ughaaaaaaa!\"\n[[Next->2]]]\n(if:$sword is \"0\")\n[\"You don't, right?\"\n[[No I haven't]]]",
+      "text": "Dark Dragon:\n\"ughaaaaaaa!\"\n[[Next->2]]",
       "links": [
         {
           "name": "Next",
           "link": "2",
-          "pid": "22"
-        },
-        {
-          "name": "No I haven't",
-          "link": "No I haven't",
-          "pid": "19"
+          "pid": "12"
         }
       ],
-      "name": "Yes I have.",
-      "pid": "18",
+      "name": "Yes.",
+      "pid": "10",
+      "score": 1,
       "position": {
-        "x": "38",
-        "y": "1222"
+        "x": "302",
+        "y": "1049"
       }
     },
     {
-      "text": "''Dark Dragon:''\n\"Go get the sword!\"\n[[Okay->Dragon Nest]]\n[[How to get the sword]]",
+      "text": "Dark Dragon:\n\"...\"\n[[Next->3]]",
       "links": [
         {
-          "name": "Okay",
-          "link": "Dragon Nest",
-          "pid": "10"
-        },
-        {
-          "name": "How to get the sword",
-          "link": "How to get the sword",
-          "pid": "20"
+          "name": "Next",
+          "link": "3",
+          "pid": "13"
         }
       ],
-      "name": "No I haven't",
-      "pid": "19",
+      "name": "You look beautiful.",
+      "pid": "11",
       "position": {
-        "x": "189",
-        "y": "1207"
-      }
-    },
-    {
-      "text": "''Drak Dragon:''\n\"What? Go meet the blacksmith and buy it!\"\n[[Okay->Dragon Nest]] \n[[\"Confused\"]]",
-      "links": [
-        {
-          "name": "Okay",
-          "link": "Dragon Nest",
-          "pid": "10"
-        },
-        {
-          "name": "\"Confused\"",
-          "link": "\"Confused\"",
-          "pid": "21"
-        }
-      ],
-      "name": "How to get the sword",
-      "pid": "20",
-      "position": {
-        "x": "341",
-        "y": "1209"
-      }
-    },
-    {
-      "text": "''Dark Dragon:''\n\"Okay,okay...I will send you there...\"\n[[Go!->Black Smith]]",
-      "links": [
-        {
-          "name": "Go!",
-          "link": "Black Smith",
-          "pid": "9"
-        }
-      ],
-      "name": "\"Confused\"",
-      "pid": "21",
-      "position": {
-        "x": "344",
-        "y": "1362"
+        "x": "471",
+        "y": "1049"
       }
     },
     {
@@ -441,74 +207,59 @@
         }
       ],
       "name": "2",
-      "pid": "22",
+      "pid": "12",
       "position": {
-        "x": "38",
-        "y": "1372"
+        "x": "302",
+        "y": "1199"
       }
     },
     {
-      "text": "''Dark Dragon:''\n\"...\"\n[[Next->3]]",
-      "links": [
-        {
-          "name": "Next",
-          "link": "3",
-          "pid": "24"
-        }
-      ],
-      "name": "Yes you are.",
-      "pid": "23",
-      "position": {
-        "x": "315",
-        "y": "1070"
-      }
-    },
-    {
-      "text": "''Dark Dragon:''\n\"......You really think so?\"\n[[Of course!]]",
+      "text": "Dark Dragon:\n\"......You really think so?\"\n[[Of course!]]",
       "links": [
         {
           "name": "Of course!",
           "link": "Of course!",
-          "pid": "25"
+          "pid": "14"
         }
       ],
       "name": "3",
-      "pid": "24",
+      "pid": "13",
       "position": {
-        "x": "448",
-        "y": "1068"
+        "x": "476",
+        "y": "1201"
       }
     },
     {
-      "text": "''Dark Dragon:''\n\"You are the only one who be nice to me...\"\n(Please pretend that there is a sound effect)\n[[What happened!]]",
+      "text": "Dark Dragon:\n\"You are the only one who be nice to me...\"\n(Please pretend that there is a sound effect)\n[[What happened!]]",
       "links": [
         {
           "name": "What happened!",
           "link": "What happened!",
-          "pid": "26"
+          "pid": "15"
         }
       ],
       "name": "Of course!",
-      "pid": "25",
+      "pid": "14",
+      "score": 1,
       "position": {
-        "x": "582",
-        "y": "1070"
+        "x": "601",
+        "y": "1203"
       }
     },
     {
-      "text": "''Princess(Dark Dragon):''\n\"You saved me! You are my destiny!\"\n[[Oh my.]]",
+      "text": "Princess(Dark Dragon):\n\"You saved me! You are my destiny!\"\n[[Oh my.]]",
       "links": [
         {
           "name": "Oh my.",
           "link": "Oh my.",
-          "pid": "27"
+          "pid": "16"
         }
       ],
       "name": "What happened!",
-      "pid": "26",
+      "pid": "15",
       "position": {
-        "x": "582",
-        "y": "1213"
+        "x": "735",
+        "y": "1200"
       }
     },
     {
@@ -517,19 +268,19 @@
         {
           "name": "Why not!",
           "link": "Why not!",
-          "pid": "28"
+          "pid": "17"
         },
         {
           "name": "I prefer dragon actually...",
           "link": "I prefer dragon actually...",
-          "pid": "29"
+          "pid": "18"
         }
       ],
       "name": "Oh my.",
-      "pid": "27",
+      "pid": "16",
       "position": {
-        "x": "582",
-        "y": "1363"
+        "x": "611",
+        "y": "1357"
       }
     },
     {
@@ -542,10 +293,11 @@
         }
       ],
       "name": "Why not!",
-      "pid": "28",
+      "pid": "17",
+      "score": 1,
       "position": {
-        "x": "726",
-        "y": "1230"
+        "x": "461",
+        "y": "1355"
       }
     },
     {
@@ -558,16 +310,17 @@
         }
       ],
       "name": "I prefer dragon actually...",
-      "pid": "29",
+      "pid": "18",
+      "score": 1,
       "position": {
-        "x": "722",
-        "y": "1381"
+        "x": "743",
+        "y": "1356"
       }
     }
   ],
-  "name": "Story",
+  "name": "dragon",
   "startnode": "1",
   "creator": "Twine",
   "creator-version": "2.3.12",
-  "ifid": "1A433D7F-2682-4CD8-BFFF-F4D12BD6B292"
+  "ifid": "BDE7BF27-26FA-4DA0-9BE5-A7E0E8D4BDEF"
 }
