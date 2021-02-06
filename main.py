@@ -3,7 +3,6 @@ import sys,os,json,re
 assert sys.version_info >= (3,9), "This script requires at least Python 3.9"
 
 
-# import os,json
 def load(l):
     f = open(os.path.join(sys.path[0], l))
     data = f.read()
@@ -41,13 +40,13 @@ def update(current,choice,game_desc):
     return current
 
 def render(current):
-    print("\n")
+    print("\n\n")
     print(current["name"])
     print(format_passage(current["text"]))
-    print("\n")
+    print("\n\n")
 
 def get_input():
-    choice = input("What would you like to do? (Type quit to exit)")
+    choice = input("What would you like to do? (Type quit to exit) ")
     choice = choice.lower().strip()
     return choice
 
